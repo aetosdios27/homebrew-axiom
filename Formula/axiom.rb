@@ -5,21 +5,21 @@
 class Axiom < Formula
   desc "The immutable system of truth for AI agent style guides and coding standards."
   homepage "https://github.com/aetosdios27/axiom-core"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.0/axiom_Darwin_x86_64.tar.gz"
-      sha256 "c7e4426824f2d7767df5d138550ed4300ffc18cf3827d641d421dfe13edcdeee"
+      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.1/axiom_Darwin_x86_64.tar.gz"
+      sha256 "f5ed9083be1ca8db82fb176f9f13735707f098d4801f8957b243884ac7d53f78"
 
       define_method(:install) do
         bin.install "axiom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.0/axiom_Darwin_arm64.tar.gz"
-      sha256 "64486b44bdad9ada31536667b91712de6a64b26cdfc6a80fa82c903c63ecaaad"
+      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.1/axiom_Darwin_arm64.tar.gz"
+      sha256 "21eee57d570c3ebd27267af347fc4bad0e24fe232219132ae34078768fe9fdc1"
 
       define_method(:install) do
         bin.install "axiom"
@@ -29,15 +29,15 @@ class Axiom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.0/axiom_Linux_x86_64.tar.gz"
-      sha256 "525911155cf4c8faea9167c1c251f6c5df3d8a53a6ba1860b6e260046cc8b669"
+      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.1/axiom_Linux_x86_64.tar.gz"
+      sha256 "f50e6d67e80cf8909bbacb8c9ec78c2b7df1318d03bbb45de095bedd08b57cdc"
       define_method(:install) do
         bin.install "axiom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.0/axiom_Linux_arm64.tar.gz"
-      sha256 "5e86447c7249c0b1b04ab303768c6c28ec095941c39805f3458ce538f7939a29"
+      url "https://github.com/aetosdios27/axiom-core/releases/download/v1.0.1/axiom_Linux_arm64.tar.gz"
+      sha256 "513769a6f8638a9dd5f023f1e6a29ce6547c13c3e5909899e08a0a6d5c916d6f"
       define_method(:install) do
         bin.install "axiom"
       end
